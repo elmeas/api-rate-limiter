@@ -12,7 +12,7 @@
 ## Core Task:
 
 ### Implement Rate Limiting Middleware
-- Implement a middleware that restricts each user to **100 requests ** for a specific API endpoint(GET /hello).
+- Implement a middleware that restricts each user to **100 requests** for a specific API endpoint(GET /hello).
 - If the rate limit is exceeded, return a response with **HTTP 429 (Too Many Requests)** status code.
 - Ensure your solution is **thread-safe** and handles concurrent requests properly.
 - Use an **in-memory store**(Java Data Structure) to track the request count.
