@@ -20,7 +20,6 @@
 ### Expectations:
 - Write **clean, maintainable code**.
 - Add **unit tests** to validate your solution.
-- Document your approach and any **assumptions** you made during implementation.
 
 ## Bonus Task:
 
