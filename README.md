@@ -1,4 +1,4 @@
-# Interview Task: Implement Rate Limiting for an API
+# Interview Task: Review and Fix an API Rate Limiter
 
 ## Instructions:
 
@@ -11,15 +11,18 @@
 
 ## Core Task:
 
-### Implement Rate Limiting Middleware
-- Implement a middleware that restricts each user to **100 requests** for a specific API endpoint(GET /hello).
+### Review the Existing Rate Limiter
+- The repository contains an in-memory rate limiter for `GET /hello`.
+- Review the implementation and fix any correctness or thread-safety problems you find.
+- The endpoint must restrict each user to **100 requests per minute**. The user is identified by the `X-User-Id` request header.
 - If the rate limit is exceeded, return a response with **HTTP 429 (Too Many Requests)** status code.
 - Ensure your solution is **thread-safe** and handles concurrent requests properly.
-- Use an **in-memory store**(Java Data Structure) to track the request count.
+- Continue using an **in-memory Java data structure** to track request counts.
 
 ### Expectations:
 - Write **clean, maintainable code**.
-- Add **unit tests** to validate your solution.
+- Add tests that demonstrate the problem and validate your solution, including concurrent requests.
+- You may use Copilot, ChatGPT, Codex, or another AI tool. Be prepared to explain and modify every part of your solution during the follow-up discussion.
 
 ## Bonus Task:
 
